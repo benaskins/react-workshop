@@ -10,12 +10,9 @@ const AppHeader = ({ greeting }) => (
 )
 
 class App extends Component {
-  constructor() {
-    super()
-    this.state = { greeting: "Howdy!!!" }
-  }
+  state = { greeting: "Howdy!!!" }
 
-  handleButtonClick() {
+  handleButtonClick = () => {
     this.setState({
       greeting: "Hellooooo!!!"
     })
@@ -31,7 +28,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-          <button type="buttons" onClick={() => { this.handleButtonClick() }}>
+          <button type="buttons" onClick={this.handleButtonClick}>
             Click me!
           </button>
         </p>
