@@ -10,14 +10,23 @@ const AppHeader = ({ greeting }) => (
 )
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = { greeting: "Howdy!!!" }
+  }
+
   handleButtonClick() {
+    this.setState({
+      greeting: "Hellooooo!!!"
+    })
+
     console.log("handle click")
   }
 
   render() {
     return (
       <div className="App">
-        <AppHeader greeting="Helloooooooo"/>
+        <AppHeader greeting={ this.state.greeting }/>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
