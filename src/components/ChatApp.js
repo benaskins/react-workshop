@@ -1,22 +1,9 @@
 import React from 'react'
+import ChatInput from './ChatInput'
+import Message from './Message'
 
-const MessageEntry = 'div'
-const Avatar = 'div'
-const MessageText = 'div'
 const Screen = 'div'
 const ChatWindow = 'div'
-const ChatInput = 'div'
-
-const Message = () => (
-  <MessageEntry>
-    <Avatar/>
-    <MessageText>
-      <div>Line one</div>
-      <div>Line two</div>
-      <div>Line three</div>
-    </MessageText>
-  </MessageEntry>
-)
 
 const ChatApp = () => (
   <Screen>
