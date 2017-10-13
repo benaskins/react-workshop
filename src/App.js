@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
 
-const AppHeader = ({ greeting }) => (
-  <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
-    <h1 className="App-title">{ greeting }</h1>
-  </header>
-)
+import AppHeader from './AppHeader'
 
 const GreetingChanger = ({ onClick }) => (
   <p>
