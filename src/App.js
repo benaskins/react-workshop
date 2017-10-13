@@ -9,10 +9,10 @@ const AppHeader = ({ greeting }) => (
   </header>
 )
 
-const GreetingChanger = ({ target }) => (
+const GreetingChanger = ({ onClick }) => (
   <p>
     Change the greeting...
-    <button type="buttons" onClick={target.handleButtonClick}>
+    <button type="buttons" onClick={onClick}>
       Click me!
     </button>
   </p>
@@ -40,7 +40,7 @@ class App extends Component {
       <div className="App">
         <AppHeader greeting={ this.state.greeting }/>
         <AppIntro/>
-        <GreetingChanger target={this}/>
+        <GreetingChanger onClick={this.handleButtonClick}/>
       </div>
     )
   }
