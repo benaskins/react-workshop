@@ -31,7 +31,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-          <button type="buttons" onClick={this.handleButtonClick}>
+          <button type="buttons" onClick={() => { this.handleButtonClick() }}>
             Click me!
           </button>
         </p>
